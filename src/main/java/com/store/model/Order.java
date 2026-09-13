@@ -22,13 +22,16 @@ public class Order {
     private final List<OrderItem> items;
     private OrderStatus status;
     private final LocalDate orderDate;
+    private PaymentMethod paymentMethod;
 
-    public Order(Customer customer){
+    public Order(Customer customer,
+                 PaymentMethod paymentMethod){
         this.id = nextId++;
         this.customer = customer;
         this.items = new ArrayList<>();
         this.status = OrderStatus.PENDING;
         this.orderDate = LocalDate.now();
+        this.paymentMethod = paymentMethod;
     }
 
     public int getId() {
@@ -49,6 +52,13 @@ public class Order {
 
     public LocalDate getOrderDate() {
         return orderDate;
+    }
+    public PaymentMethod getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public void setPaymentMethod(PaymentMethod paymentMethod) {
+        this.paymentMethod = paymentMethod;
     }
 
     public void addItem(Product product,
@@ -98,8 +108,16 @@ public class Order {
     }
 
     public void displayInfo() {
-        System.out.println("Order ID: " + id + ", " +
-                           "Customer: " + customer.getName() + ", " +
-                           "Total: " + getTotal() + ", Status: " + status);
+        System.out.println("Order ID: " + id);
+        System.out.println("Customer: " + customer.getName());
+        System.out.println("Date: " + orderDate);
+        System.out.println("Status: " + status);
+        System.out.println("Payment: " + paymentMethod);  // ← Adaugă
+        System.out.println("Items:");
+        for (OrderItem item : items) {
+            System.out.println("  " + item.quantity() + " x " +
+                    item.product().getName() + " = " + item.getSubTotal());
+        }
+        System.out.println("Total: " + getTotal());
     }
 }

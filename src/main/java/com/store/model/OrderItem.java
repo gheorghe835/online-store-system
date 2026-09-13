@@ -1,6 +1,5 @@
 package main.java.com.store.model;
 
-import model.Product;
 
 /*
 OrderItem reprezintă un produs inclus

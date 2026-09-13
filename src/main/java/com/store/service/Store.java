@@ -25,6 +25,11 @@ public class Store {
         this.orders = new ArrayList<>();
     }
 
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+
     public Product addProduct(String name,
                               double price,
                               int stock,
@@ -56,18 +61,26 @@ public class Store {
     }
 
     public Order placeOrder(int customerId,
-                            List<OrderItem> items) throws CustomerNotFoundException,
+                            List<OrderItem> items,
+                            PaymentMethod paymentMethod) throws CustomerNotFoundException,
             EmptyCartException, OutOfStockException, InvalidQuantityException {
         Customer customer = findCustomerById(customerId);
         if (items.isEmpty()){
             throw new EmptyCartException();
         }
-        Order order = new Order(customer);
+        Order order = new Order(customer,paymentMethod);
         for (OrderItem item : items){
             order.addItem(item.product(), item.quantity());
         }
         orders.add(order);
         return order;
+    }
+
+    public Order findOrderById(int id) throws StoreException {
+        return orders.stream()
+                .filter(order -> order.getId() == id)
+                .findFirst()
+                .orElseThrow(() -> new StoreException("Order not found with id: " + id));
     }
 
     public void displayCatalog(){
