@@ -6,6 +6,7 @@ import main.java.com.store.model.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /*
 Store este clasa de service care gestionează produsele,
 clienții și comenzile din sistem. Ea oferă metode pentru
