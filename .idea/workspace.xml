@@ -6,18 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="246a29e6-b5bf-4f2b-9b6e-75c2b45ef8e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/exception/CustomerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/exception/CustomerNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/exception/EmptyCartException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/exception/EmptyCartException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/exception/InvalidQuantityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/exception/InvalidQuantityException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/exception/OutOfStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/exception/OutOfStockException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/exception/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/exception/ProductNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/exception/StoreException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/exception/StoreException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/PaymentMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/PaymentMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/store/service/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/store/service/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1789186068142</updated>
       <workItem from="1789186069155" duration="1597000" />
-      <workItem from="1789187695964" duration="2885000" />
+      <workItem from="1789187695964" duration="7680000" />
     </task>
     <servers />
   </component>
